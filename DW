@@ -2,20 +2,6 @@ repeat wait() until game.Players.LocalPlayer ~= nil
 
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/sasquatchhtv/SasHub/main/DWScriptFree'),true))()
 
-game.StarterGui:SetCore("SendNotification", {
-    Title = 'LOADING';
-    Text = "Loading script. Enter a round to fully load";
-    Icon = "rbxassetid://2541869220";
-    Duration = 7;
-})
-
-game.StarterGui:SetCore("SendNotification", {
-    Title = 'Effects';
-    Text = "Loaded!";
-    Icon = "rbxassetid://2541869220";
-    Duration = 4;
-})
-
 local eff = require(game:GetService("Workspace").ServerStuff.Statistics["S_STATISTICS"])
 if eff then
     eff.RespA.dur = 120
